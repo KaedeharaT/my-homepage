@@ -230,22 +230,24 @@ export default function Home() {
             transformation.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="mailto:fengyuanze01@hotmail.com"
-              className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-400"
-            >
-              Contact by Email
-            </a>
-
-            <a
-              href="https://github.com/KaedeharaT"
-              className="rounded-xl border border-slate-600 px-6 py-3 font-semibold hover:border-blue-400 hover:text-blue-400"
-            >
-              View GitHub
-            </a>
+          <div className="space-y-4 text-slate-300">
+            <div>
+              <p className="text-sm text-slate-400">Email</p>
+              <p className="font-medium select-all">
+                fengyuanze01@hotmail.com
+              </p>
+            </div>
+          
+            <div>
+              <p className="text-sm text-slate-400">GitHub</p>
+              <a
+                href="https://github.com/KaedeharaT"
+                className="font-medium text-blue-400 hover:underline break-all"
+              >
+                https://github.com/KaedeharaT
+              </a>
+            </div>
           </div>
-        </div>
       </section>
 
       <footer className="border-t border-slate-800 px-6 py-8 text-center text-sm text-slate-500">
