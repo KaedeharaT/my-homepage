@@ -76,7 +76,7 @@ export default function Home() {
             </a>
 
             <a
-              href="mailto:your@email.com"
+              href="mailto:fengyuanze01@hotmail.com"
               className="rounded-xl border border-slate-600 px-6 py-3 font-semibold text-slate-200 hover:border-blue-400 hover:text-blue-400"
             >
               Email
@@ -232,7 +232,7 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:your@email.com"
+              href="mailto:fengyuanze01@hotmail.com"
               className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-400"
             >
               Contact by Email
