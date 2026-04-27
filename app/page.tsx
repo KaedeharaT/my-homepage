@@ -15,24 +15,11 @@ const projects = [
     tags: ["LSTM", "RL", "Energy Optimization"],
   },
   {
-  title: "HVAC AI Analyzer",
-  desc: "A Python-based system for automatic HVAC data analysis, including semantic column recognition, COP calculation, and system performance evaluation.",
-  tags: ["Python", "HVAC", "LLM", "Energy"],
-  link: "https://github.com/KaedeharaT/hvac-ai-analyzer",
+    title: "HVAC AI Analyzer",
+    desc: "A Python-based system for automatic HVAC data analysis, including semantic column recognition, COP calculation, and system performance evaluation.",
+    tags: ["Python", "HVAC", "LLM", "Energy"],
+    link: "https://github.com/KaedeharaT/hvac-ai-analyzer",
   },
-];
-
-const skills = [
-  "Python",
-  "Machine Learning",
-  "Deep Learning",
-  "LLM Applications",
-  "HVAC Systems",
-  "Building Energy Analysis",
-  "BEMS Data Analysis",
-  "YOLO / Computer Vision",
-  "EnergyPlus",
-  "Data Visualization",
 ];
 
 export default function Home() {
@@ -46,31 +33,26 @@ export default function Home() {
 
           <div className="hidden gap-6 text-sm text-slate-300 md:flex">
             <a href="#about" className="hover:text-blue-400">About</a>
-            <a href="#research" className="hover:text-blue-400">Research</a>
             <a href="#projects" className="hover:text-blue-400">Projects</a>
-            <a href="#skills" className="hover:text-blue-400">Skills</a>
             <a href="#contact" className="hover:text-blue-400">Contact</a>
           </div>
         </nav>
       </header>
 
       {/* Hero */}
-      <section className="mx-auto grid max-w-6xl gap-10 px-6 py-24 md:grid-cols-[1.4fr_1fr]">
-        <div>
-          <p className="mb-4 text-sm text-blue-400">
-            PhD Student · AI × Building Energy · HVAC Data Science
-          </p>
+      <section className="mx-auto max-w-6xl px-6 py-24">
+        <p className="mb-4 text-sm text-blue-400">
+          PhD Student · AI × Building Energy · HVAC Data Science
+        </p>
 
-          <h1 className="mb-6 text-5xl font-bold">Yuanze Feng</h1>
+        <h1 className="mb-6 text-5xl font-bold">Yuanze Feng</h1>
 
-          <p className="mb-8 text-lg text-slate-300">
-            I specialize in AI-driven building energy systems, focusing on transforming
-            complex HVAC and operational data into actionable insights.
-            My work bridges machine learning and physical systems to support
-            energy optimization and carbon neutrality.
-          </p>
-
-        </div>
+        <p className="mb-8 max-w-3xl text-lg text-slate-300">
+          I specialize in AI-driven building energy systems, focusing on transforming
+          complex HVAC and operational data into actionable insights.
+          My work bridges machine learning and physical systems to support
+          energy optimization and carbon neutrality.
+        </p>
       </section>
 
       {/* About */}
@@ -86,17 +68,17 @@ export default function Home() {
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="text-3xl font-bold mb-8">Projects</h2>
 
+        <div className="grid md:grid-cols-3 gap-6">
           {projects.map((p) => (
             <div key={p.title} className="bg-slate-900 p-6 rounded-xl">
               <h3 className="font-semibold text-xl mb-3">{p.title}</h3>
               <p className="text-slate-400 text-sm mb-4">{p.desc}</p>
-          
-              {/* 👉 这里加 */}
+
               {p.link && (
                 <a
                   href={p.link}
-                  className="text-blue-400 text-sm hover:underline mt-2 inline-block"
                   target="_blank"
+                  className="text-blue-400 text-sm hover:underline mt-2 inline-block"
                 >
                   View Code →
                 </a>
@@ -104,12 +86,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <a
-          href={project.link}
-          className="text-blue-400 text-sm hover:underline mt-4 inline-block"
-        >
-          View Code →
-        </a>
       </section>
 
       {/* Contact */}
