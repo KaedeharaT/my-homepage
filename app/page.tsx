@@ -63,22 +63,6 @@ export default function Home() {
             My work bridges machine learning and physical systems to support
             energy optimization and carbon neutrality.
           </p>
-
-          <div className="flex gap-4">
-            <a
-              href="https://github.com/KaedeharaT"
-              className="rounded-xl bg-blue-500 px-6 py-3 font-semibold"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="/cv.pdf"
-              className="rounded-xl border border-slate-600 px-6 py-3"
-            >
-              Download CV
-            </a>
-          </div>
         </div>
       </section>
 
