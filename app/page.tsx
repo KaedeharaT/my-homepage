@@ -14,6 +14,12 @@ const projects = [
     desc: "Energy prediction and operational optimization using LSTM models and reinforcement learning for building energy systems.",
     tags: ["LSTM", "RL", "Energy Optimization"],
   },
+  {
+  title: "HVAC AI Analyzer",
+  desc: "A Python-based system for automatic HVAC data analysis, including semantic column recognition, COP calculation, and system performance evaluation.",
+  tags: ["Python", "HVAC", "LLM", "Energy"],
+  link: "https://github.com/KaedeharaT/hvac-ai-analyzer",
+  },
 ];
 
 const skills = [
@@ -88,6 +94,12 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <a
+          href={project.link}
+          className="text-blue-400 text-sm hover:underline mt-4 inline-block"
+        >
+          View Code →
+        </a>
       </section>
 
       {/* Contact */}
