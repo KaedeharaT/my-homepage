@@ -1,20 +1,5 @@
 const projects = [
   {
-    title: "LLM-based HVAC Data Semantic Analysis",
-    desc: "A semantic–physical framework for interpreting BEMS and HVAC operation data using LLMs, rule-based scoring, and physical constraints.",
-    tags: ["LLM", "HVAC", "BEMS", "Python"],
-  },
-  {
-    title: "YOLO-based Architectural Drawing Recognition",
-    desc: "Cross-domain object recognition in architectural drawings using YOLO-based transfer learning and domain adaptation strategies.",
-    tags: ["YOLO", "Computer Vision", "Architecture"],
-  },
-  {
-    title: "LSTM-RL Energy Optimization",
-    desc: "Energy prediction and operational optimization using LSTM models and reinforcement learning for building energy systems.",
-    tags: ["LSTM", "RL", "Energy Optimization"],
-  },
-  {
     title: "HVAC AI Analyzer",
     desc: "A Python-based system for automatic HVAC data analysis, including semantic column recognition, COP calculation, and system performance evaluation.",
     tags: ["Python", "HVAC", "LLM", "Energy"],
