@@ -86,11 +86,21 @@ export default function Home() {
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="text-3xl font-bold mb-8">Projects</h2>
 
-        <div className="grid md:grid-cols-3 gap-6">
           {projects.map((p) => (
             <div key={p.title} className="bg-slate-900 p-6 rounded-xl">
               <h3 className="font-semibold text-xl mb-3">{p.title}</h3>
               <p className="text-slate-400 text-sm mb-4">{p.desc}</p>
+          
+              {/* 👉 这里加 */}
+              {p.link && (
+                <a
+                  href={p.link}
+                  className="text-blue-400 text-sm hover:underline mt-2 inline-block"
+                  target="_blank"
+                >
+                  View Code →
+                </a>
+              )}
             </div>
           ))}
         </div>
